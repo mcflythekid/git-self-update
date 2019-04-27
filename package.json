@@ -1,6 +1,10 @@
 {
   "name": "git-self-update",
   "version": "1.0.0",
+  "keywords":[
+    "self update",
+    "git update"
+  ],
   "description": "Get the latest version of yor code",
   "main": "index.js",
   "author": "McFly the Kid",
