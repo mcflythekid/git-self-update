@@ -1,0 +1,16 @@
+{
+  "name": "git-self-update",
+  "version": "1.0.0",
+  "description": "Get the latest version of yor code",
+  "main": "index.js",
+  "author": "McFly the Kid",
+  "license": "MIT",
+  "dependencies": {
+    "prompts": "^2.0.4",
+    "shelljs": "^0.8.3"
+  },
+  "bin": {
+    "git-self-update": "./bin/git-self-update.js"
+  },
+  "repository": "git@github.com:mcflythekid/git-self-update.git"
+}
