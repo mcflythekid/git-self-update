@@ -10,7 +10,7 @@ $ git-self-update
 
 ```
 {
-  "script":{
+  "scripts":{
     "update": "git-self-update"
   }
 }
