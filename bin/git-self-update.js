@@ -11,6 +11,10 @@ const exec = command=>{
     }
 }
 
+const argv = require('yargs-parser')(process.argv.slice(2))
+const defaultTarget = 'origin/master'
+const target = argv._.length ? argv._[0] : defaultTarget
+
 (async ()=>{
     const response = await prompts({
         type: 'text',
@@ -24,5 +28,5 @@ const exec = command=>{
         
     //https://grimoire.ca/git/stop-using-git-pull-to-deploy
     exec('git fetch --all')
-    exec('git checkout --force origin/master')
+    exec(`git checkout --force ${target}`)
 })()
