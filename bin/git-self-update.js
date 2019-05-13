@@ -13,7 +13,7 @@ const exec = command=>{
 
 const argv = require('yargs-parser')(process.argv.slice(2))
 const defaultTarget = 'origin/master'
-const target = argv._.length ? argv._[0] : defaultTarget
+const target = argv._.length ? argv._[0] : defaultTarget;
 
 (async ()=>{
     const response = await prompts({
